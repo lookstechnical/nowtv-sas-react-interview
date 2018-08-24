@@ -46,14 +46,16 @@ Feel free to create new files to help you complete these tasks. Please ask befor
 
            Actions
               FETCH_DATA -> when dispatched initiates fetching the messages and members
-              FETCH_DATA_SUCCESS -> dispatched when a successfull result comes back from the above call
+              FETCH_DATA_SUCCESS -> dispatched when a successful result comes back from the above call
 
            Sagas
             messageSaga
-                @fetchData - Fetches the data from the rest or GraphQL api and once fetched dispatches the FETCH_DATA_SUCCESS action
+                @fetchData - Fetches the data from the rest or GraphQL api and once
+                fetched dispatches the FETCH_DATA_SUCCESS action
 
 
-           messageReducer - This would recieve the data from FETCH_DATA_SUCCESS action and uses the mergeAndFormatMessages utility to convert the data to the correct format.
+           messageReducer - This would recieve the data from FETCH_DATA_SUCCESS action
+           and uses the mergeAndFormatMessages utility to convert the data to the correct format.
 
 
 
@@ -62,7 +64,8 @@ Feel free to create new files to help you complete these tasks. Please ask befor
 
             Use an errorReducer for global errors
 
-            On error from the server dispatch a FETCH_DATA_FAIL error to update and another action ON_ERROR to the global errorsReducer
+            On error from the server dispatch a FETCH_DATA_FAIL error to update and another action
+             ON_ERROR to the global errorsReducer
 
 
   - If you were to continue this application, what would you add?
@@ -73,10 +76,12 @@ Feel free to create new files to help you complete these tasks. Please ask befor
 
   - If you were to deploy this application (or any web application) to production, how would you personally do it?
 
-            I would usually use a kind of Git-flow process and have develop and master (production) on auto deployment through something like jenkins
+            I would usually use a kind of Git-flow process and have develop and master (production)
+            on auto deployment through something like jenkins
 
   - Finally, what did you think of the test? 😀
 
-            the service test covers the basics but could be improved to test things like formatting, ordering and the number of messages is correct
+            the service test covers the basics but could be improved to test things like formatting,
+            ordering and the number of messages is correct
 
 
