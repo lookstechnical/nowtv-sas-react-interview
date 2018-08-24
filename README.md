@@ -39,21 +39,21 @@ Feel free to create new files to help you complete these tasks. Please ask befor
 4. Bonus Questions:
   - How would you achieve this with Redux?
 
-       to implement this in redux with redux saga you could set up
+           to implement this in redux with redux saga you could set up
 
-       messageStore - This would contain the array of message plus possibly loading flags and errors
-
-
-       Actions
-          FETCH_DATA -> when dispatched initiates fetching the messages and members
-          FETCH_DATA_SUCCESS -> dispatched when a successfull result comes back from the above call
-
-       Sagas
-        messageSaga
-            @fetchData - Fetches the data from the rest or GraphQL api and once fetched dispatches the FETCH_DATA_SUCCESS action
+           messageStore - This would contain the array of message plus possibly loading flags and errors
 
 
-       messageReducer - This would recieve the data from FETCH_DATA_SUCCESS action and uses the mergeAndFormatMessages utility to convert the data to the correct format.
+           Actions
+              FETCH_DATA -> when dispatched initiates fetching the messages and members
+              FETCH_DATA_SUCCESS -> dispatched when a successfull result comes back from the above call
+
+           Sagas
+            messageSaga
+                @fetchData - Fetches the data from the rest or GraphQL api and once fetched dispatches the FETCH_DATA_SUCCESS action
+
+
+           messageReducer - This would recieve the data from FETCH_DATA_SUCCESS action and uses the mergeAndFormatMessages utility to convert the data to the correct format.
 
 
 
@@ -73,10 +73,10 @@ Feel free to create new files to help you complete these tasks. Please ask befor
 
   - If you were to deploy this application (or any web application) to production, how would you personally do it?
 
-       I would usually use a kind of Git-flow process and have develop and master (production) on auto deployment through something like jenkins
+            I would usually use a kind of Git-flow process and have develop and master (production) on auto deployment through something like jenkins
 
   - Finally, what did you think of the test? 😀
 
-       the service test covers the basics but could be improved to test things like formatting, ordering and the number of messages is correct
+            the service test covers the basics but could be improved to test things like formatting, ordering and the number of messages is correct
 
 
